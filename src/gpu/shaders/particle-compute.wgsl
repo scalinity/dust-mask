@@ -24,11 +24,11 @@ struct SimParams {
 @group(0) @binding(3) var<uniform> params: SimParams;
 
 // Constants
-const DAMPING: f32 = 0.92;
-const NOISE_STRENGTH: f32 = 0.015;  // More noise for organic feel
-const SEEK_STRENGTH: f32 = 0.08;   // Gentler seeking
-const SPREAD_RADIUS: f32 = 0.06;   // Large spread for overlap between landmarks
-const MIN_SPREAD: f32 = 0.01;      // Minimum offset
+const DAMPING: f32 = 0.9;
+const NOISE_STRENGTH: f32 = 0.008;
+const SEEK_STRENGTH: f32 = 0.12;
+const SPREAD_RADIUS: f32 = 0.025;  // How much particles spread around landmark
+const MIN_SPREAD: f32 = 0.008;  // Minimum offset so no particle is exactly at landmark
 
 // Simple pseudo-random
 fn hash(p: vec2f) -> f32 {
