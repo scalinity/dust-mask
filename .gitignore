@@ -22,6 +22,10 @@ Thumbs.db
 *.swp
 *.swo
 
+# Claude Code
+.claude/
+.claudecommandhistory
+
 # Environment files
 .env
 .env.local
